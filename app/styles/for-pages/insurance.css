@@ -1,0 +1,102 @@
+.mesh {
+    width: 85%;
+    margin: 35px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+    .mesh__element {
+        background: rgba(194, 224, 194, 0.574);
+        border: 1px solid #00000022;
+        border-radius: 25px;
+        padding: 35px;
+
+        position: relative;
+
+        transition: .5s ease-in-out;
+    }
+
+    .mesh__element:hover {
+        background: rgba(194, 224, 194, 0.75);
+    }
+
+    .mesh__element:hover > img {
+        transform: scale(0.95);
+    }
+
+        .mesh__element h1 {
+            font-size: 26px;
+            margin-bottom: 25px;
+        }
+
+        .mesh__element p {
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 25px;
+        }
+
+        .mesh__element button {
+            display: block;
+            margin-top: 25px;
+
+            padding: 10px 25px;
+            font-size: 20px;
+            border-radius: 15px;
+
+            color: white;
+            background: #5eb745;
+            border: none;
+            
+            transition: .5s ease-in-out;
+        }
+
+        .mesh__element button:hover {
+            background-color: green;
+        }
+
+        .mesh__element img {
+            margin-right: 20px;
+            border: 0.5px solid rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            padding: 15px;
+            background: #ffffff99;
+            
+            transition: .5s ease-in-out;
+        }
+
+        #mortgage img {
+            width: 100%;
+        }
+
+    #mortgage {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    #casco {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+        #casco p {
+            max-width: 800px;
+        }
+
+        #casco img {
+            position: absolute;
+            top: 75px;
+            right: 35px;
+            width: 300px;
+        }
+
+    #health-protect {
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+
+        #health-protect img {
+            width: 100%;
+        }

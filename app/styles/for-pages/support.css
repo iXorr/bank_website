@@ -1,0 +1,109 @@
+.support-main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+    .support__header {
+        margin: 45px 0 25px 0;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .faq-lists-collection {
+        padding: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .faq-list {
+            width: 600px;
+        }
+
+            .faq-list .element {
+                background: rgba(103, 215, 103, 0.326);
+                position: relative;
+                
+                border: 1px solid rgba(0, 100, 0, 0.5);
+                border-radius: 10px;
+                margin: 0 0 10px 0;
+            }
+
+                .faq-item__flag {
+                    content: '';
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    right: 25px;
+                    top: 10px;
+                }
+
+                .faq-item__flag {
+                    transition: .25s ease-in-out;
+                }
+
+                .faq-list input {
+                    opacity: 0;
+                    z-index: 1;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .faq-list__content {
+                    overflow: hidden;
+                }
+
+                .faq-list__content p {
+                    transition: height .35s ease, opacity .25s ease;
+
+                    position: relative;
+                    top: 15px;
+                    left: 25px;
+                    max-width: 550px;
+
+                    font-size: 18px;
+                    height: 0;
+
+                    opacity: 0;
+                }
+
+                .faq-list__content .decorate-line {
+                    content: '';
+                    position: absolute;
+                    left: -100px;
+                    top: -10px;
+                    width: 150%;
+                    height: 1px;
+                    background-color: darkgreen;
+                }
+
+                .faq-list__content h2 {
+                    padding: 10px 25px;
+                    font-size: 22px;
+                    font-weight: normal;
+                    text-shadow: 0 0 1px #999;
+                }
+
+                .faq-list input:checked ~ .faq-list__content p {
+                    height: 95px;
+                    opacity: 1;
+                }
+
+                .faq-list input:checked ~ .faq-item__flag {
+                    transform: rotate(180deg);
+                }
+
+        .faq-links {
+            padding-left: 25px;
+            width: 500px;
+        }
+
+            .faq-links li {
+                font-size: 22px;
+                transition: .5s ease-in-out;
+                margin-bottom: 25px;
+            }
+
+            .faq-links li:hover {
+                opacity: 0.8;
+            }
