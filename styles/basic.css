@@ -3,30 +3,6 @@
     src: url(../assets/fonts/Montserrat/Montserrat-Regular.ttf);
 }
 
-.returnToMain {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    border-bottom-right-radius: 15px;
-    background: rgb(135, 215, 135);
-    border: 1px solid green;
-    border-left: none;
-    border-top: none;
-    font-weight: 600;
-    width: 125px;
-    height: 35px;
-    position: fixed;
-    left: 0;
-    top: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-decoration: none;
-    color: green;
-
-    transition: .5s ease-in-out;
-}
-
 *,
 *::before,
 *::after {
@@ -49,5 +25,5 @@ li {
 
 body {
     margin: 25px auto;
-    width: 1340px;
+    /* width: 1340px; */
 }
