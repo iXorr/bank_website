@@ -1,3 +1,7 @@
+img {
+    flex-shrink: 0;
+}
+
 .bank-miniature {
     background: linear-gradient(90deg, rgba(156, 198, 144, 0.75), rgba(100, 180, 171, 0.75));
     border-radius: 25px;
@@ -105,7 +109,6 @@
                     }
 
                 .miniature__photo-item img {
-                    width: 40%;
                     transition: all 0.5s ease-in-out;
 
                     &:hover {
