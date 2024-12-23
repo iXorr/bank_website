@@ -533,95 +533,15 @@ img {
                     font-size: 18px;
                 }
 
-@media (max-width: 1024px) {
-    body > * {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .calc__subscribe-wrapper {
-        width: 90%;
-    }
-}
-
-@media (max-width: 768px) {
-    .offer__blocks-inner {
-        max-width: 98%;
-    }
-    
-        .offer__block {
-            width: 325px;
-        }
-
-        #offerBlocksPerson {
-            max-width: 98%;
-        }
-}
-
-@media (max-width: 425px) {
-    * {
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+@media (max-width: 1440px) {
+    .bank-calc {
+        display: none;
     }
 
     .bank-offer {
-        margin: 0;
         padding: 25px 15px;
-        padding-right: 0;
     }
-
-        .offer__header {
-            margin: 0 0 15px 5px;
-            font-size: 18px;
-            width: 102.5%;
-        }
-
-        .offer__blocks-wrapper {
-            margin: 0;
-            width: 103.9%;
-        }
-
-            #offerBlocksPerson {
-                display: none;
-            }
-
-            .offer__blocks-inner {
-                display: block;
-            }
-
-                .offer__block {
-                    width: 100%;
-                    height: 125px;
-                    margin-bottom: 20px;    
-                    transition: .15s ease-in-out;
-                }
-
-                .offer__block:last-child {
-                    margin-bottom: 5px;
-                }
-
-                .offer__block:hover {
-                    transform: scale(1);
-                }
-
-                .offer__block:active {
-                    transform: scale(1.05);
-                }
-
-                    .offer__block-header {
-                        font-size: 14px;
-                    }
-
-                    .offer__block-text {
-                        font-size: 12px;
-                        max-width: 150px;
-                    }
-
-                    .offer__block-icon {
-                        width: 40%;
-                        height: 100%;
-                    }
-
+    
     .bank-safety {
         padding: 10px 35px 10px 35px;
     }
@@ -630,8 +550,8 @@ img {
             font-size: 20px;
         }
 
-        .safety-top__link {
-            font-size: 12px;
+        .safety-top__link-wrapper {
+            display: none;
         }
 
         .safety-bottom {
@@ -650,6 +570,52 @@ img {
                     width: 90%;
                     font-size: 14px;
                 }
+}
+
+@media (max-width: 1280px) {
+    .offer__block {
+        width: 325px;
+    }
+
+    .offer__block-header {
+        font-size: 14px;
+    }
+
+    .offer__block-text {
+        font-size: 12px;
+    }
+
+    .offer__block-icon {
+        width: 125px;
+        height: 125px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .offer__block {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .offer__block {
+        padding: 15px;
+    }
+
+    .offer__block-text {
+        top: 27.5%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .offer__block {
+        width: 250px;
+    }
+
+    .offer__block-icon {
+        width: 100px;
+        height: 100px;
+    }
 
     .bank-miniature {
         height: 200px;
@@ -745,19 +711,79 @@ img {
             background: #006400;
         }
 
-            .calc__switch {
-                font-size: 14px;
-                padding: 10px 25px;
+}
+
+@media (max-width: 900px) {
+    .offer__header {
+        margin: 0 0 15px 5px;
+        font-size: 18px;
+        width: 102.5%;
+    }
+
+    .offer__blocks-wrapper {
+        margin: 0;
+        width: 103.9%;
+    }
+
+        #offerBlocksPerson {
+            display: none;
+        }
+
+        .offer__blocks-inner {
+            display: block;
+        }
+
+            .offer__block {
+                width: 90%;
+                margin: 0 auto;
+                height: 125px;
+                margin-bottom: 20px;    
+                transition: .15s ease-in-out;
             }
+
+            .offer__block:last-child {
+                margin-bottom: 5px;
+            }
+
+            .offer__block:hover {
+                transform: scale(1);
+            }
+
+            .offer__block:active {
+                transform: scale(1.05);
+            }
+
+                .offer__block-header {
+                    font-size: 14px;
+                }
+}
+
+@media (max-width: 425px) {
+    .bank-calc {
+        display: block;
+    }
+
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .bank-offer {
+        margin: 0;
+        padding: 25px 15px;
+        padding-right: 0;
+    }
 
         .calc__menu {
             height: 315px;
         }
 
             .calc__menu * {
-                /* outline: 1px solid red; */
-                
                 transition: .2s ease-in-out;
+            }
+
+            .calc__switch {
+                font-size: 14px;
+                padding: 10px 25px;
             }
 
             .deposit__menu,
@@ -767,10 +793,6 @@ img {
                 margin: -30px -40px;
                 display: block;
             }
-
-            /* .credit__menu {
-                display: none;
-            } */
 
                 .deposit__menu-right {
                     width: 125%;

@@ -1,5 +1,4 @@
 .mortgage-main {
-    /* margin: 45px 270px; */
     margin: 45px 0;
 }
 
@@ -32,6 +31,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        gap: 15px;
     }
 
         .catalog > * {
@@ -41,12 +41,7 @@
         .offer {
             display: flex;
             align-items: center;
-            padding-left: 65px;
         }
-
-        /* .offer-reverse {
-            padding-left: 0;
-        } */
 
             .offer__icon {
                 width: 200px;
@@ -61,14 +56,6 @@
                     /* box-shadow: 0 1px 10px #eee, 0 1px 15px #aaa; */
                 }
             }
-
-            /* .offer__icon-reverse {
-                transform: scaleX(-1);
-            } */
-
-            /* .offer__content {
-
-            } */
 
                 .offer__content > * {
                     margin: 10px 0;
@@ -132,10 +119,58 @@
                             height: 15px;
                         }
 
-@media (max-width: 1024px) {
-    .mortgage-main {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+@media (max-width: 1180px) {
+    .offer__icon {
+        width: 150px;
+        height: 150px;
     }
+
+    .offer__header {
+        font-size: 18px;
+    }
+
+    .offer__descr,
+    .offer__submit {
+        font-size: 16px;
+    }
+
+    .offer__table {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .mortgage-main {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .offer__icon {
+        width: 125px;
+        height: 125px;
+    }
+
+    .offer__header {
+        font-size: 16px;
+    }
+
+    .offer__descr,
+    .offer__submit {
+        font-size: 14px;
+    }
+
+    .offer__table {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 900px) {
+    .catalog {
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    
 }
