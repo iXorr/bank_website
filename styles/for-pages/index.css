@@ -201,7 +201,7 @@ img {
             }
 
                 .offer__block {
-                    width: 350px;
+                    width: 450px;
                     height: 150px;
                     padding: 25px;
 
@@ -212,11 +212,17 @@ img {
 
                     box-shadow: 0 2.5px 7.5px #999;
 
+                    position: relative;
+
                     &:hover {
                         transform: scale(1.05);
                     }
+                }
 
-                    position: relative;
+                @media (max-width: 1675px) {
+                    .offer__block {
+                        width: 350px;
+                    }
                 }
 
                     .offer__block > * {
